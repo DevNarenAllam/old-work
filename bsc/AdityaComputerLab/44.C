@@ -1,0 +1,30 @@
+#include<stdio.h>
+main()
+{
+	int n,k;
+	clrscr();
+	printf("enter any digit number :");
+	scanf("%d",&n);
+	k=n/500;
+	printf("500*%d=%d\n",k,500*k);
+	n=n%500;
+	k=n/100;
+	printf("100*%d=%d\n",k,100*k);
+	n=n%100;
+	k=n/50;
+	printf("50*%d=%d\n",k,50*k);
+	n=n%50;
+	k=n/10;
+	printf("10*%d=%d\n",k,10*k);
+	n=n%10;
+	k=n/5;
+	printf("5*%d=%d\n",k,5*k);
+	n=n%5;
+	k=n/2;
+	printf("2*%d=%d\n",k,2*k);
+	n=n%2;
+	k=n/1;
+	printf("1*%d=%d\n",k,1*k);
+	n=n%1;
+	getch();
+}
